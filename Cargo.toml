@@ -1,0 +1,20 @@
+[package]
+name = "snake-rs"
+version = "0.1.0"
+authors = ["David Ayeke <ayekedavid@yahoo.com>"]
+
+[dependencies.serde_json]
+    version = "1.0"
+
+[dependencies.sdl2]
+    version = "0.31"
+    default-features = false
+    features = ["image"]
+
+[lib]
+name = "snake"
+path = "src/lib.rs"
+
+[[bin]]
+name = "snake-bin"
+path = "src/main.rs"
